@@ -1,0 +1,133 @@
+.profile-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1130px;
+	height: 1200px;
+	background: #fff;
+}
+
+.profile-box {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 824.38px;
+}
+
+.profile {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 10.26%;
+	background: rgba(54, 44, 44, 0.1);
+	backdrop-filter: blur(280px);
+	border-radius: 500px 60px 300px 100px;
+	box-shadow: 12px 2px 9px gray;
+}
+
+.myName {
+	position: absolute;
+	top: 11px;
+	left: 21px;
+	width: 580px;
+	height: 77px;
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #000000;
+}
+
+.next-profile-btn {
+	position: absolute;
+	left: 35.21%;
+	right: 36.75%;
+	top: 93.34%;
+	bottom: 0%;
+
+	font-family: "Lato";
+	font-style: italic;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 100%;
+	color: #ffffff;
+
+	background: #35660e;
+	box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+}
+
+.contact-form-btn {
+	position: absolute;
+	right: 26px;
+	top: 11px;
+	width: 236px;
+	height: 90px;
+
+	font-family: "Lato";
+	font-style: italic;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 100%;
+	color: #ffffff;
+
+	background: #40483a;
+	box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+}
+
+.profile-img {
+	position: absolute;
+	left: 18%;
+	right: 15.25%;
+	top: 16.98%;
+	bottom: 36.56%;
+
+	background: url("https://i.picsum.photos/id/872/534/383.jpg?hmac=HmWtVkXUE_R_BHHz3T16KHu1KW0NLzERg97e3_kwvF8");
+	border-radius: 200px 20px 100px 50px;
+}
+
+.profile-name {
+	position: absolute;
+	left: 28.33%;
+	right: 29.94%;
+	top: 66.64%;
+	bottom: 24.11%;
+
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 61px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.profile-description-box {
+	position: absolute;
+	left: 28.33%;
+	right: 25.62%;
+	top: 74.07%;
+	bottom: 18.71%;
+
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 100;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #000000;
+}
+
+.account-star-icon {
+	position: absolute;
+	left: 69.77%;
+	right: 23.06%;
+	top: 66.64%;
+	bottom: 26.91%;
+}
