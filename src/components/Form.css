@@ -1,0 +1,162 @@
+.form {
+	position: absolute;
+	top: 101px;
+	left: 59px;
+	width: 897px;
+	/* height: 646.35px; */
+	/* background: gold; */
+	font-family: "Inter";
+}
+
+.form-title {
+	position: absolute;
+	width: 897px;
+	height: 52.64px;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 165%;
+	text-transform: uppercase;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	letter-spacing: 0.15em;
+
+	color: #000000;
+}
+
+.form .line {
+	position: absolute;
+	bottom: -12.39px;
+	width: 166.17px;
+	height: 9.29px;
+	background: #071594;
+}
+
+.content {
+	padding-left: 203.13px;
+	padding-top: 130.06px;
+	height: 100%;
+}
+
+.form label {
+	width: auto;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 165%;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 19px;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #000;
+}
+
+.accept {
+	position: relative;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 30px;
+	height: 30px;
+	margin-right: 16px;
+	border: 1px solid black;
+	outline: 2px solid black;
+}
+
+.accept:checked {
+	background-color: #3cc0e1;
+}
+
+.accept:checked:after {
+	content: "\2714";
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.privacy {
+	display: flex;
+	align-items: center;
+	margin-top: 19px;
+}
+
+.privacy input,
+.privacy label {
+	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+
+.center .submit {
+	margin-top: 26px;
+	width: 224.3px;
+	height: 54.88px;
+
+	font-family: "Lato";
+	font-style: italic;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 100%;
+	text-align: center;
+
+	background: #071594;
+	box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.center .submit span {
+	color: #ffffff;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.error {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 165%;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	color: red;
+}
+
+.error-input {
+	position: relative;
+	bottom: 16px;
+}
+
+.error-privacy {
+	margin-left: 32px;
+}
+
+.form .content .error-border {
+	border-bottom: 1px solid red;
+}
+
+.error-outline {
+	border-color: red;
+	outline-color: red;
+}
+
+/* .error-outline:checked {
+	background-color: white;
+} */
+
+#success {
+	color: #28a745;
+}

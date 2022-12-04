@@ -1,6 +1,6 @@
-import { useState } from "react";
-import useFetch from "../hooks/useFetch";
+// import { useState } from "react";
 import ErrorOverlay from "./ErrorOverlay";
+import { Link } from "react-router-dom";
 
 // Material Icon
 import Grid from "@mui/material/Grid";
@@ -11,15 +11,18 @@ import { mdiAccountStar } from "@mdi/js";
 // styles
 import "./Profile.css";
 
-const Profile = () => {
-	const [url, setUrl] = useState("https://swapi.py4e.com/api/people/1/");
-	const [clicks, setClicks] = useState(2);
+const Profile = props => {
+	// const [url, setUrl] = useState("https://swapi.py4e.com/api/people/1/");
+	// const [clicks, setClicks] = useState(2);
 	const {
 		data: profile,
 		img: imgUrl,
 		isPending,
 		error,
-	} = useFetch(url, { type: "GET" });
+		handleClick,
+		handleNextProfileClick,
+	} = props;
+	// const { data: profile, img: imgUrl, isPending, error } = useFetch(url);
 
 	const style = {
 		position: "absolute",
@@ -40,22 +43,22 @@ const Profile = () => {
 		userName = name;
 	}
 
-	const handleClick = () => {
-		if (error) {
-			setClicks(1);
-			console.log(clicks);
-			setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
-		} else {
-			setClicks(clicks + 1);
-			console.log(clicks);
-			setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
-		}
-	};
+	// const handleClick = () => {
+	// 	if (error) {
+	// 		setClicks(1);
+	// 		console.log(clicks);
+	// 		setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
+	// 	} else {
+	// 		setClicks(clicks + 1);
+	// 		console.log(clicks);
+	// 		setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
+	// 	}
+	// };
 
-	const handleNextProfileClick = () => {
-		setClicks(clicks + 1);
-		setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
-	};
+	// const handleNextProfileClick = () => {
+	// 	setClicks(clicks + 1);
+	// 	setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
+	// };
 
 	return (
 		<>
@@ -66,7 +69,7 @@ const Profile = () => {
 					firstProfile={handleClick}
 				/>
 			)}
-			<div className='profile-wrapper'>
+			<div className='wrapper'>
 				<div className='profile-box'>
 					<div className='profile'>
 						<div
@@ -114,7 +117,11 @@ const Profile = () => {
 					</button>
 				</div>
 				<p className='myName'>Szymon Szymurai Bytniewski</p>
-				<button className='contact-form-btn'>formularz rejestracyjny</button>
+				<Link
+					to={`/form`}
+					className='contact-form-btn'>
+					<span>formularz rejestracyjny</span>
+				</Link>
 			</div>
 		</>
 	);
