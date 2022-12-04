@@ -4,6 +4,10 @@
 	margin: 0;
 }
 
+body {
+	overflow: hidden;
+}
+
 .App {
 	position: absolute;
 	top: 50%;

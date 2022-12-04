@@ -23,7 +23,8 @@
 	right: 0%;
 	top: 0%;
 	bottom: 10.26%;
-	background: rgba(54, 44, 44, 0.1);
+	background-color: rgba(54, 44, 44, 0.1);
+	-webkit-backdrop-filter: blur(280px);
 	backdrop-filter: blur(280px);
 	border-radius: 500px 60px 300px 100px;
 	box-shadow: 12px 2px 9px gray;
@@ -59,6 +60,8 @@
 	background: #35660e;
 	box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
 	border-radius: 20px;
+
+	cursor: pointer;
 }
 
 .contact-form-btn {
@@ -78,6 +81,8 @@
 	background: #40483a;
 	box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
 	border-radius: 20px;
+
+	cursor: pointer;
 }
 
 .profile-img {
@@ -86,8 +91,6 @@
 	right: 15.25%;
 	top: 16.98%;
 	bottom: 36.56%;
-
-	background: url("https://i.picsum.photos/id/872/534/383.jpg?hmac=HmWtVkXUE_R_BHHz3T16KHu1KW0NLzERg97e3_kwvF8");
 	border-radius: 200px 20px 100px 50px;
 }
 
@@ -130,4 +133,29 @@
 	right: 23.06%;
 	top: 66.64%;
 	bottom: 26.91%;
+}
+
+@media (max-width: 992px) {
+	.profile-wrapper {
+		width: 791px;
+		height: 840px;
+	}
+
+	.profile-box {
+		width: 560px;
+		height: 577.066px;
+	}
+}
+
+@media (max-width: 576px) {
+	.profile-wrapper {
+		width: 553.7px;
+		height: 588px;
+		padding: 20px;
+	}
+
+	.profile-box {
+		width: 392px;
+		height: 403.9462px;
+	}
 }
