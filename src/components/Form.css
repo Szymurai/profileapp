@@ -15,12 +15,10 @@
 	font-size: 20px;
 	line-height: 165%;
 	text-transform: uppercase;
-
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	letter-spacing: 0.15em;
-
 	color: #000000;
 }
 
@@ -102,14 +100,12 @@
 	margin-top: 26px;
 	width: 224.3px;
 	height: 54.88px;
-
 	font-family: "Lato";
 	font-style: italic;
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 100%;
 	text-align: center;
-
 	background: #071594;
 	box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
 	border-radius: 20px;
@@ -126,7 +122,6 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 165%;
-
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;

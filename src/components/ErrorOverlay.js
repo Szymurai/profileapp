@@ -10,7 +10,7 @@ function ErrorOverlay(props) {
 				<button
 					className='next-profile error-btn'
 					onClick={nextProfile}>
-					Try Next Profile?
+					try next profile
 				</button>
 				<p>Or</p>
 				<button

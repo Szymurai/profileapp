@@ -23,7 +23,7 @@ function App() {
 			setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
 		}
 	};
-
+	//Obsługa brakujących osób w API np. pozycja nr 17.
 	const handleNextProfileClick = () => {
 		setClicks(clicks + 1);
 		setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
