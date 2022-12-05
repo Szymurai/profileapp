@@ -17,11 +17,9 @@ function App() {
 	const handleClick = () => {
 		if (error) {
 			setClicks(1);
-			console.log(clicks);
 			setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
 		} else {
 			setClicks(clicks + 1);
-			console.log(clicks);
 			setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
 		}
 	};
@@ -40,7 +38,6 @@ function App() {
 						path='/'>
 						<Profile
 							url={url}
-							// setUrl={setUrl}
 							data={data}
 							img={img}
 							isPending={isPending}

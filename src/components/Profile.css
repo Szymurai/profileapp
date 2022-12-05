@@ -128,10 +128,9 @@
 
 	font-family: "Inter";
 	font-style: italic;
-	font-weight: 100;
+	font-weight: 400;
 	font-size: 20px;
-	line-height: 24px;
-
+	line-height: 100%;
 	color: #000000;
 }
 
@@ -143,27 +142,170 @@
 	bottom: 26.91%;
 }
 
-@media (max-width: 992px) {
-	.profile-wrapper {
-		width: 791px;
-		height: 840px;
+@media (max-width: 1280px) {
+	.wrapper {
+		width: 60%;
+		height: 100%;
+	}
+	.profile-box {
+		top: 52%;
+		width: 70%;
+		height: 75%;
 	}
 
-	.profile-box {
-		width: 560px;
-		height: 577.066px;
+	.profile-img {
+		width: 67%;
+	}
+	.profile-description-box {
+		top: 80%;
+	}
+	.profile-name {
+		top: 65%;
+		font-size: 36px;
+	}
+	.next-profile-btn {
+		top: 96%;
+		bottom: -4%;
+		left: 36%;
+		right: 36%;
+		font-size: 22px;
+	}
+	.account-star-icon {
+		left: 65%;
+	}
+	svg[data-testid="CheckCircleIcon"] {
+		left: 75% !important;
+	}
+	.myName {
+		font-size: 20px;
+	}
+	.contact-form-btn {
+		top: 1%;
+		right: 3%;
+		width: 22%;
+		height: 10%;
+		font-size: 22px;
 	}
 }
 
-@media (max-width: 576px) {
-	.profile-wrapper {
-		width: 553.7px;
-		height: 588px;
-		padding: 20px;
+@media (max-width: 992px) {
+	.profile-name {
+		left: 25%;
+		font-size: 32px;
 	}
 
-	.profile-box {
-		width: 392px;
-		height: 403.9462px;
+	.profile-description-box {
+		font-size: 16px;
+	}
+
+	.account-star-icon {
+		left: 62%;
+	}
+
+	.next-profile-btn {
+		left: 34%;
+		right: 34%;
+		font-size: 20px;
+	}
+
+	.contact-form-btn {
+		right: 4%;
+		width: 24%;
+		height: 9%;
+		font-size: 20px;
+	}
+
+	.myName {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 780px) {
+	.profile-name {
+		top: 62%;
+		font-size: 24px;
+	}
+	.profile-description-box {
+		top: 87%;
+		font-size: 14px;
+	}
+
+	.account-star-icon {
+		top: 74%;
+		left: 31%;
+	}
+
+	svg[data-testid="CheckCircleIcon"] {
+		top: 74% !important;
+		left: 49% !important;
+	}
+	.next-profile-btn {
+		left: 30%;
+		right: 30%;
+		font-size: 18px;
+	}
+	.contact-form-btn {
+		right: 5%;
+		width: 28%;
+		height: 8%;
+		font-size: 18px;
+	}
+	.myName {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 690px) {
+	.wrapper {
+		width: 100%;
+		height: 100%;
+	}
+	.contact-form-btn {
+		right: 4%;
+		width: 24%;
+		height: 9%;
+		font-size: 20px;
+	}
+	.next-profile-btn {
+		left: 34%;
+		right: 34%;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 590px) {
+	.next-profile-btn {
+		left: 32%;
+		right: 32%;
+		font-size: 18px;
+	}
+	.contact-form-btn {
+		right: 5%;
+		width: 26%;
+		height: 8%;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 415px) {
+	.wrapper {
+		overflow: hidden;
+	}
+	.profile-name {
+		top: 63%;
+		font-size: 29px;
+	}
+	.profile-description-box {
+		left: 19%;
+		font-size: 16px;
+	}
+	.next-profile-btn {
+		left: 26%;
+		right: 26%;
+		font-size: 21px;
+	}
+	.contact-form-btn {
+		width: 30%;
+		font-size: 19px;
 	}
 }

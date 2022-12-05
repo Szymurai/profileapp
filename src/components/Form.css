@@ -3,8 +3,6 @@
 	top: 101px;
 	left: 59px;
 	width: 897px;
-	/* height: 646.35px; */
-	/* background: gold; */
 	font-family: "Inter";
 }
 
@@ -153,10 +151,132 @@
 	outline-color: red;
 }
 
-/* .error-outline:checked {
-	background-color: white;
-} */
-
 #success {
 	color: #28a745;
+}
+
+@media (max-width: 1280px) {
+	.form {
+		top: 5%;
+		left: 5%;
+		width: 80%;
+	}
+
+	.content {
+		padding-left: 12%;
+		padding-top: 14%;
+	}
+
+	.form-title {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.form .line {
+		bottom: -6%;
+		width: 20%;
+		height: 10%;
+	}
+
+	.form label {
+		font-size: 16px;
+	}
+	.center .submit {
+		width: 37%;
+		height: 30%;
+		margin-top: 10%;
+		font-size: 24px;
+	}
+	.center .submit span {
+		display: inline-block;
+		padding-top: 2%;
+		padding-bottom: 3%;
+	}
+	.form input[type="text"],
+	.form input[type="password"],
+	.form input[type="email"],
+	.form input[type="number"] {
+		border-bottom: 1px solid black;
+	}
+	.accept {
+		width: 25px;
+		height: 25px;
+		outline: 1px solid black;
+	}
+	.error {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 992px) {
+	.form {
+		top: 6%;
+	}
+
+	.content {
+		padding-top: 20%;
+	}
+
+	.form .line {
+		width: 25%;
+	}
+
+	.form label {
+		font-size: 14px;
+	}
+
+	.center .submit {
+		width: 34%;
+		font-size: 22px;
+	}
+	.center .submit span {
+		padding-top: 3%;
+		padding-bottom: 4%;
+	}
+
+	.error {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 780px) {
+	.form label {
+		font-size: 12px;
+	}
+
+	.center .submit {
+		margin-top: 19%;
+		font-size: 20px;
+	}
+	.form .line {
+		width: 30%;
+	}
+	.form-title {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 650px) {
+	.form-title {
+		font-size: 12px;
+	}
+
+	.form .line {
+		width: 30%;
+	}
+	.error {
+		font-size: 10px;
+	}
+
+	.center .submit {
+		width: 34%;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 400px) {
+	.wrapper {
+		width: 100%;
+		height: 100%;
+	}
 }

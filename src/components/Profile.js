@@ -12,8 +12,6 @@ import { mdiAccountStar } from "@mdi/js";
 import "./Profile.css";
 
 const Profile = props => {
-	// const [url, setUrl] = useState("https://swapi.py4e.com/api/people/1/");
-	// const [clicks, setClicks] = useState(2);
 	const {
 		data: profile,
 		img: imgUrl,
@@ -22,7 +20,6 @@ const Profile = props => {
 		handleClick,
 		handleNextProfileClick,
 	} = props;
-	// const { data: profile, img: imgUrl, isPending, error } = useFetch(url);
 
 	const style = {
 		position: "absolute",
@@ -42,23 +39,6 @@ const Profile = props => {
 		const [name] = fullName.split(" ");
 		userName = name;
 	}
-
-	// const handleClick = () => {
-	// 	if (error) {
-	// 		setClicks(1);
-	// 		console.log(clicks);
-	// 		setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
-	// 	} else {
-	// 		setClicks(clicks + 1);
-	// 		console.log(clicks);
-	// 		setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
-	// 	}
-	// };
-
-	// const handleNextProfileClick = () => {
-	// 	setClicks(clicks + 1);
-	// 	setUrl(`https://swapi.py4e.com/api/people/${clicks}/`);
-	// };
 
 	return (
 		<>
@@ -86,7 +66,12 @@ const Profile = props => {
 						<p className='profile-name'>{userName ? userName : "loading..."}</p>
 						<div className='profile-description-box'>
 							<p className='profile-age'>
-								age: <span>{profile.age}</span>
+								birth year:{" "}
+								<span>
+									{profile.birth_year === "unknown"
+										? "brak daty urodzenia"
+										: profile.birth_year}
+								</span>
 							</p>
 							<p className='profile-eye-color'>
 								eye color:{" "}

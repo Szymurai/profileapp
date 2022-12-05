@@ -101,7 +101,7 @@ function Form(props) {
 		console.log(validation);
 		if (validation.correct) {
 			postData({ login, password, email, phone, accept, ...start_wars_data });
-			//apiData nie będzie zwrócone na TRUE, ponieważ nie można wykonać na api metody POST
+			//apiData nie zwróci  true, ponieważ nie można wykonać na API metody POST
 			//W celu przetestowania można wpisać zamiast apiData => true, wówczas formularz zostanie wyczyszczony
 			// apiData / true
 			if (true) {
@@ -153,8 +153,7 @@ function Form(props) {
 	};
 
 	// redirect the user when we get data response
-
-	// apiData nie zwraca true, ze względu na brak uprawnień do wykonania metody POST w api
+	// apiData nie zwraca true, ze względu na brak uprawnień do wykonania metody POST w API.
 	useEffect(() => {
 		if (apiData) {
 			history.push("/");
